@@ -1,0 +1,11 @@
+parameters:
+    level: 6
+    paths:
+        - src
+        - tests
+    symfony:
+        container_xml_path: var/cache/dev/App_KernelDevDebugContainer.xml
+    doctrine:
+        objectManagerLoader: phpstan/doctrine-orm-bootstrap.php
+    scanDirectories:
+        - var/cache/dev/Symfony/Config

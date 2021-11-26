@@ -1,0 +1,14 @@
+lexik_jwt_authentication:
+    secret_key: "%env(resolve:JWT_SECRET_KEY)%"
+    public_key: "%env(resolve:JWT_PUBLIC_KEY)%"
+    pass_phrase: 1ea24f3da356740c13d27feba150905d
+    token_extractors:
+        # check token in a cookie
+        cookie:
+            enabled: true
+            name: BEARER
+    set_cookies:
+        BEARER:
+            samesite: lax
+            secure: true
+            httpOnly: true

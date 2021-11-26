@@ -1,0 +1,6 @@
+parameters:
+  customer_importer_data_provider: 'https://randomuser.me/api'
+  request_params:
+    nat: 'au'
+    results: '150'
+    inc: 'name, email, login, gender, location, phone'
